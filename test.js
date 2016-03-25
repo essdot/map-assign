@@ -43,3 +43,14 @@ test('skips empty values', function (t) {
   t.equal(target.get('c'), mapB.get('c'))
   t.end()
 })
+
+test("doesn't choke if target = source", function (t) {
+  var map1 = new Map([['a', 'b']])
+  var map2 = new Map([['d', 'e']])
+
+  mapAssign(map1, {}, map1, map2)
+
+  t.equal(map1.get('a'), 'b')
+  t.equal(map1.get('d'), 'e')
+  t.end()
+})
