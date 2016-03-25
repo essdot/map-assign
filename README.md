@@ -3,7 +3,7 @@
 Assigns key/values to target map, from any number of source maps.
 
 ```
-function mapAssign(target, [...sources]) -> Map
+function mapAssign(target, [source1, source2, ...]) -> Map
 ```
 
 arguments:
