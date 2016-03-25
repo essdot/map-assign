@@ -12,7 +12,8 @@ arguments:
 * sources: any number of Maps or objects to assign key/values from
 
 The key/values are copied from sources, last source wins. The target map
-is also returned. `mapAssign` does not throw on null or undefined source values.
+is also returned. `mapAssign` does not throw on `null` or `undefined`
+source values.
 
 ```javascript
 var sourceA = new Map([['a', 'b'], ['c', 'd']])
